@@ -1,13 +1,91 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Variables */
+
+:root {
+  --black-2: rgba(0, 0, 0, 0.8);
+  --black: rgba(0, 0, 0, 1);
+  --timber-green: rgba(21, 50, 39, 1);
+  --eerie-black: rgba(27, 27, 27, 1);
+  --illuminating-emerald: rgba(64, 148, 118, 1);
+  --x6bf8c5-button: rgba(107, 248, 197, 1);
+  --white: rgba(255, 255, 255, 1);
+
+  --font-size-m: 10px;
+  --font-size-l: 14px;
+  --font-size-xl: 18px;
+  --font-size-xxl: 24px;
+  --font-size-xxxl: 36px;
+
+  --font-family-montserrat: "Montserrat";
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Classes */
+
+.montserrat-semi-bold-black-24px-2 {
+  color: var(--black);
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-xxl);
+  font-weight: 600;
+  font-style: normal;
+}
+.border-1px-black {
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--black);
+}
+.border-1px-x6bf8c5-button {
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--x6bf8c5-button);
+}
+.montserrat-medium-white-10px {
+  color: var(--white);
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-m);
+  font-weight: 500;
+  font-style: normal;
+}
+.montserrat-semi-bold-white-18px {
+  color: var(--white);
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-xl);
+  font-weight: 600;
+  font-style: normal;
+}
+.border-1-5px-white {
+  border-width: 1.5px;
+  border-style: solid;
+  border-color: var(--white);
+}
+.border-1-2px-white {
+  border-width: 1.2px;
+  border-style: solid;
+  border-color: var(--white);
+}
+.montserrat-semi-bold-black-24px {
+  color: var(--black-2);
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-xxl);
+  font-weight: 600;
+  font-style: normal;
+}
+.montserrat-extra-bold-black-36px {
+  color: var(--black);
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-xxxl);
+  font-weight: 800;
+  font-style: italic;
+}
+.montserrat-semi-bold-black-18px {
+  color: var(--black);
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-xl);
+  font-weight: 600;
+  font-style: normal;
+}
+.montserrat-semi-bold-white-24px {
+  color: var(--white);
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-xxl);
+  font-weight: 600;
+  font-style: normal;
 }
