@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Login from './components/pages/Login';
 import Home from './components/pages/Home';
 import Register from './components/pages/Register';
-//import Lockunlock from './js-components/Lockunlock';
+import Lockunlock from './js-components/Lockunlock';
 
 
 function App() {
