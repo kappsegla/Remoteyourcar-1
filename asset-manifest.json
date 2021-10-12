@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/Remoteyourcar/static/css/main.763b1d5f.chunk.css",
+    "main.js": "/Remoteyourcar/static/js/main.8275abaf.chunk.js",
+    "main.js.map": "/Remoteyourcar/static/js/main.8275abaf.chunk.js.map",
+    "runtime-main.js": "/Remoteyourcar/static/js/runtime-main.b3ba15b2.js",
+    "runtime-main.js.map": "/Remoteyourcar/static/js/runtime-main.b3ba15b2.js.map",
+    "static/js/2.410769fd.chunk.js": "/Remoteyourcar/static/js/2.410769fd.chunk.js",
+    "static/js/2.410769fd.chunk.js.map": "/Remoteyourcar/static/js/2.410769fd.chunk.js.map",
+    "index.html": "/Remoteyourcar/index.html",
+    "static/css/main.763b1d5f.chunk.css.map": "/Remoteyourcar/static/css/main.763b1d5f.chunk.css.map",
+    "static/js/2.410769fd.chunk.js.LICENSE.txt": "/Remoteyourcar/static/js/2.410769fd.chunk.js.LICENSE.txt",
+    "static/media/logo.b2cb48e0.png": "/Remoteyourcar/static/media/logo.b2cb48e0.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b3ba15b2.js",
+    "static/js/2.410769fd.chunk.js",
+    "static/css/main.763b1d5f.chunk.css",
+    "static/js/main.8275abaf.chunk.js"
+  ]
+}
