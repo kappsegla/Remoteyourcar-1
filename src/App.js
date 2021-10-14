@@ -1,20 +1,34 @@
 import React from 'react';
 import './App.css';
-import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import {Router, Switch, Route} from 'react-router-dom';
 import Login from './components/pages/Login';
 import Home from './components/pages/Home';
 import Register from './components/pages/Register';
+import createBrowserHistory from 'history/createBrowserHistory';
+import Lock from './components/pages/Lock';
+
+
+
 
 
 
 function App() {
+  const history = createBrowserHistory({ basename: '/Remoteyourcar' })
   return (
-    
-      <Router>
+ 
+
+<Router history={history}>
+     
         <Switch>
-          <Route path='/Remoteyourcar' exact component={Login} />
-          <Route path='/Remoteyourcar/home' exact component={Home} />
-          <Route path='/Remoteyourcar/register' exact component={Register} />
+          <Route path='/' exact component={Login} />
+          <Route path='/home' exact component={Home} />
+          <Route path='/register' exact component={Register} />
+          <Route path='/lock' exact component={Lock} />
+
+
+
+
+
 
         </Switch>
       </Router>

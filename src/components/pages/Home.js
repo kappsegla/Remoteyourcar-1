@@ -1,11 +1,19 @@
 import React from 'react'
+import { useHistory } from "react-router-dom";
+
 import '../../App.css';
 
+
 function Home() {
+    let history = useHistory();
+    const clear = () => {
+        
+        localStorage.clear();
+        history.push("/");
+      };
+    
     return (
-        <div className='aaa'>
-            <h1>Home page</h1>
-        </div>
+        <button type="submit" className="logout" onClick={clear}>Logga ut</button>
     )
 }
 

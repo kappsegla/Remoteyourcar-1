@@ -3,27 +3,53 @@ import logo from '../../logo.png';
 import '../../App.css';
 import { useState } from "react";
 import axios from "axios";
-import { useEffect } from "react";
 import {Link} from "react-router-dom";
+import { useHistory } from "react-router-dom";
+
+
 
 const Login = () => {
+  
+  let history = useHistory();
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-  const [anvandera, setUser] = useState()
+ 
+  window.onload = function (){
+    if (localStorage.getItem('Token') 
+    !== null) {
+      history.push("/home");
+   }
+  }
+ 
 
-  const ev = async e => {
+  const loggain = async e => {
     e.preventDefault();
-    axios.post(
-      "https://h-178-174-162-51.a536.priv.bahnhof.se/auth/",
-      username, password
+    let token = await axios.post(
+      "https://h-178-174-162-51.a536.priv.bahnhof.se/auth/",{
+
+  username,
+  password 
+ 
+   }  
+   
     );
+    let data = token.data;
+   console.log(data.access_token);
+   localStorage.setItem('Token', data.access_token);
+   let key = localStorage.getItem("Token")
+  
+   
+   if(key) {
+    history.push("/home");
+     
     
   }
   
+  //  localStorage.clear()
 
-  if (anvandera) {
-    return <div>{username} loggat in</div>;
-  }
+  };
+  
+  
  
     return (
         <div>
@@ -38,7 +64,7 @@ const Login = () => {
       
       </header>
       <div className="login-con">
-      <form onSubmit={ev}>
+      <form onSubmit={loggain}>
         <div className="username-div">
         
         <label>
@@ -57,7 +83,7 @@ const Login = () => {
       </form>
     </div>
     <p>Forgot your Password?</p>
-    <p><Link to="/register"> New RegisterUser? Register Here </Link></p>
+    <p><Link to="/register" className="alink"> New RegisterUser? Register Here </Link></p>
     
     </div>
         </div>

@@ -62,6 +62,7 @@
   box-shadow: 0 8px 8px 0 grey;
   width: 20vmin;
   height: 8vmin;
+  cursor: pointer;
 }
 
 input {
@@ -75,6 +76,11 @@ input {
 p {
   text-shadow: 1px 1px 4px grey;
   text-align: center;
+}
+
+.alink {
+  color: black;
+  text-decoration: none;
 }
 
 

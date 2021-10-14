@@ -10,23 +10,22 @@ const Register = () => {
   
   
 
-  const evv = async e => {
+  const registerasig = async e => {
     e.preventDefault();
-    await axios.post(
+     axios.post(
       "https://h-178-174-162-51.a536.priv.bahnhof.se/sign-up/",{
-data:{
-  username : "",
-  password : ""
+
+  username,
+  password 
  
-}    }  
+   }  
     );
+    
    
   };
   
   
-  // if (anvandera) {
-  //   return <div>{username} loggat in</div>;
-  // }
+  
  
     return (
         <div>
@@ -41,7 +40,7 @@ data:{
       
       </header>
       <div className="login-con">
-      <form onSubmit={evv}>
+      <form onSubmit={registerasig}>
         <div className="username-div">
         
         <label>
