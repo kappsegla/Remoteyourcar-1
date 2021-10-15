@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/Remoteyourcar/static/css/main.c8dc8c94.chunk.css",
-    "main.js": "/Remoteyourcar/static/js/main.be7b5c7e.chunk.js",
-    "main.js.map": "/Remoteyourcar/static/js/main.be7b5c7e.chunk.js.map",
+    "main.css": "/Remoteyourcar/static/css/main.e81054f2.chunk.css",
+    "main.js": "/Remoteyourcar/static/js/main.4f9ab453.chunk.js",
+    "main.js.map": "/Remoteyourcar/static/js/main.4f9ab453.chunk.js.map",
     "runtime-main.js": "/Remoteyourcar/static/js/runtime-main.b3ba15b2.js",
     "runtime-main.js.map": "/Remoteyourcar/static/js/runtime-main.b3ba15b2.js.map",
-    "static/js/2.a5441579.chunk.js": "/Remoteyourcar/static/js/2.a5441579.chunk.js",
-    "static/js/2.a5441579.chunk.js.map": "/Remoteyourcar/static/js/2.a5441579.chunk.js.map",
+    "static/js/2.aa7c9cb5.chunk.js": "/Remoteyourcar/static/js/2.aa7c9cb5.chunk.js",
+    "static/js/2.aa7c9cb5.chunk.js.map": "/Remoteyourcar/static/js/2.aa7c9cb5.chunk.js.map",
     "index.html": "/Remoteyourcar/index.html",
-    "static/css/main.c8dc8c94.chunk.css.map": "/Remoteyourcar/static/css/main.c8dc8c94.chunk.css.map",
-    "static/js/2.a5441579.chunk.js.LICENSE.txt": "/Remoteyourcar/static/js/2.a5441579.chunk.js.LICENSE.txt",
+    "static/css/main.e81054f2.chunk.css.map": "/Remoteyourcar/static/css/main.e81054f2.chunk.css.map",
+    "static/js/2.aa7c9cb5.chunk.js.LICENSE.txt": "/Remoteyourcar/static/js/2.aa7c9cb5.chunk.js.LICENSE.txt",
     "static/media/logo.b2cb48e0.png": "/Remoteyourcar/static/media/logo.b2cb48e0.png"
   },
   "entrypoints": [
     "static/js/runtime-main.b3ba15b2.js",
-    "static/js/2.a5441579.chunk.js",
-    "static/css/main.c8dc8c94.chunk.css",
-    "static/js/main.be7b5c7e.chunk.js"
+    "static/js/2.aa7c9cb5.chunk.js",
+    "static/css/main.e81054f2.chunk.css",
+    "static/js/main.4f9ab453.chunk.js"
   ]
 }
