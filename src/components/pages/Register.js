@@ -12,7 +12,7 @@ const Register = () => {
 
   const registerasig = async e => {
     e.preventDefault();
-     axios.post(
+     await axios.post(
       "https://h-178-174-162-51.a536.priv.bahnhof.se/sign-up/",{
 
   username,

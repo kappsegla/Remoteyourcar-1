@@ -35,6 +35,7 @@ const Login = () => {
 
             }
         );
+        /** @namespace data.access_token **/
         let data = token.data;
         console.log(data.access_token);
         localStorage.setItem('Token', data.access_token);

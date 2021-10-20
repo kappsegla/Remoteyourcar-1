@@ -24,7 +24,7 @@ function Home() {
             history.push("/");
         }
     });
-
+    /** @namespace jsonDoc.vehicles **/
     let carIds = jsonDoc.vehicles;
     console.log(carIds);
 

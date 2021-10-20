@@ -4,7 +4,7 @@ import {Router, Switch, Route} from 'react-router-dom';
 import Login from './components/pages/Login';
 import Home from './components/pages/Home';
 import Register from './components/pages/Register';
-import createBrowserHistory from 'history/createBrowserHistory';
+import {createBrowserHistory} from 'history';
 import VehicleState from './components/pages/VehicleState';
 
 function App() {
