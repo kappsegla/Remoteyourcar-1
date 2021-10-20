@@ -35,11 +35,13 @@
 .frontTrunk {
     grid-column: 2;
     grid-row: 1;
+    place-self: center;
 }
 
 .rearTrunk {
     grid-column: 2;
     grid-row: 4;
+    place-self: center;
 }
 .carImage{
     grid-column: 2;

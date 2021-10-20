@@ -1,0 +1,7 @@
+.yourCar {
+    border-style: solid;
+    border-color:grey;
+    border-radius:6px;
+    padding: 4px;
+    display: inline-block;
+}

@@ -1,24 +1,30 @@
 import React, {Component} from 'react';
-import './VehicleState.css'
+import NavigateUp from "./NavigateUp";
+
 import greenlock from '../../images/greenlock.svg'
 import redlock from '../../images/redlock.svg'
 import car from '../../images/car.png'
 
+import './VehicleState.css'
+
 class VehicleState extends Component {
-    //id = 2;
+    id=2;
 
     constructor(props) {
         super(props);
         this.handleLockClick = this.lockVehicle.bind(this);
         this.handleUnLockClick = this.unLockVehicle.bind(this);
         this.id = props.location.carId;
+        if ( this.id == null )
+            this.id = 2;
+
         this.state = {
             carId: 2,
             timestamp: 0,
             locked: false,
             doorState: {
                 df_open: false,
-                df_locked: false,
+                df_locked: true,
                 pf_open: false,
                 pf_locked: true,
                 dr_open: false,
@@ -36,9 +42,8 @@ class VehicleState extends Component {
     render() {
         return (
             <div>
-                <h2>Vehicle State..</h2>
-                <div><span>carId : </span>{String(this.state.carId)}</div>
-                <div><span>locked : </span>{String(this.state.doorState.df_locked)}</div>
+                <h2>Vehicle State for carId: {String(this.state.carId)}</h2>
+                <NavigateUp/>
                 <div className="container">
                     <div className="carImage"><img className="car" src={car} alt=""/></div>
                     <div className="driverDoor">{this.state.doorState.df_locked
