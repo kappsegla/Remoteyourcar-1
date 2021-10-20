@@ -1,21 +1,24 @@
 {
   "files": {
-    "main.css": "/Remoteyourcar/static/css/main.e81054f2.chunk.css",
-    "main.js": "/Remoteyourcar/static/js/main.4f9ab453.chunk.js",
-    "main.js.map": "/Remoteyourcar/static/js/main.4f9ab453.chunk.js.map",
-    "runtime-main.js": "/Remoteyourcar/static/js/runtime-main.b3ba15b2.js",
-    "runtime-main.js.map": "/Remoteyourcar/static/js/runtime-main.b3ba15b2.js.map",
-    "static/js/2.aa7c9cb5.chunk.js": "/Remoteyourcar/static/js/2.aa7c9cb5.chunk.js",
-    "static/js/2.aa7c9cb5.chunk.js.map": "/Remoteyourcar/static/js/2.aa7c9cb5.chunk.js.map",
-    "index.html": "/Remoteyourcar/index.html",
-    "static/css/main.e81054f2.chunk.css.map": "/Remoteyourcar/static/css/main.e81054f2.chunk.css.map",
-    "static/js/2.aa7c9cb5.chunk.js.LICENSE.txt": "/Remoteyourcar/static/js/2.aa7c9cb5.chunk.js.LICENSE.txt",
-    "static/media/logo.b2cb48e0.png": "/Remoteyourcar/static/media/logo.b2cb48e0.png"
+    "main.css": "/Remoteyourcar-1/static/css/main.8ffb4912.chunk.css",
+    "main.js": "/Remoteyourcar-1/static/js/main.90dcf252.chunk.js",
+    "main.js.map": "/Remoteyourcar-1/static/js/main.90dcf252.chunk.js.map",
+    "runtime-main.js": "/Remoteyourcar-1/static/js/runtime-main.1bdd7d31.js",
+    "runtime-main.js.map": "/Remoteyourcar-1/static/js/runtime-main.1bdd7d31.js.map",
+    "static/js/2.6dd7dd4b.chunk.js": "/Remoteyourcar-1/static/js/2.6dd7dd4b.chunk.js",
+    "static/js/2.6dd7dd4b.chunk.js.map": "/Remoteyourcar-1/static/js/2.6dd7dd4b.chunk.js.map",
+    "index.html": "/Remoteyourcar-1/index.html",
+    "static/css/main.8ffb4912.chunk.css.map": "/Remoteyourcar-1/static/css/main.8ffb4912.chunk.css.map",
+    "static/js/2.6dd7dd4b.chunk.js.LICENSE.txt": "/Remoteyourcar-1/static/js/2.6dd7dd4b.chunk.js.LICENSE.txt",
+    "static/media/car.d107f261.png": "/Remoteyourcar-1/static/media/car.d107f261.png",
+    "static/media/greenlock.1e16003c.svg": "/Remoteyourcar-1/static/media/greenlock.1e16003c.svg",
+    "static/media/logo.b2cb48e0.png": "/Remoteyourcar-1/static/media/logo.b2cb48e0.png",
+    "static/media/redlock.92695db5.svg": "/Remoteyourcar-1/static/media/redlock.92695db5.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.b3ba15b2.js",
-    "static/js/2.aa7c9cb5.chunk.js",
-    "static/css/main.e81054f2.chunk.css",
-    "static/js/main.4f9ab453.chunk.js"
+    "static/js/runtime-main.1bdd7d31.js",
+    "static/js/2.6dd7dd4b.chunk.js",
+    "static/css/main.8ffb4912.chunk.css",
+    "static/js/main.90dcf252.chunk.js"
   ]
 }
