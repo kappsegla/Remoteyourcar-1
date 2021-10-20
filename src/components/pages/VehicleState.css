@@ -1,0 +1,56 @@
+.VehicleState {
+    padding: 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 200px 1fr;
+    grid-template-rows: 1fr 200px 200px 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.driverDoor {
+    grid-column: 1;
+    grid-row: 2;
+    align-self: end;
+}
+
+.passengerDoor {
+    grid-column: 3;
+    grid-row: 2;
+    align-self: end;
+}
+
+.driverRearDoor {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.passengerRearDoor {
+    grid-column: 3;
+    grid-row: 3;
+}
+
+.frontTrunk {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.rearTrunk {
+    grid-column: 2;
+    grid-row: 4;
+}
+.carImage{
+    grid-column: 2;
+    grid-row: 2/3;
+    place-self: center stretch;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+}
+.car{
+    width:200px;
+    height: 400px;
+}

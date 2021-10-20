@@ -6,8 +6,6 @@ import axios from "axios";
 import {Link} from "react-router-dom";
 import { useHistory } from "react-router-dom";
 
-
-
 const Login = () => {
   
   let history = useHistory();
@@ -20,7 +18,6 @@ const Login = () => {
       history.push("/home");
    }
   }
- 
 
   const loggain = async e => {
     e.preventDefault();

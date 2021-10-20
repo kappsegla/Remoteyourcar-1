@@ -5,34 +5,21 @@ import Login from './components/pages/Login';
 import Home from './components/pages/Home';
 import Register from './components/pages/Register';
 import createBrowserHistory from 'history/createBrowserHistory';
-import Lock from './components/pages/Lock';
-
-
-
-
-
+import VehicleState from './components/pages/VehicleState';
 
 function App() {
-  const history = createBrowserHistory({ basename: '/Remoteyourcar' })
+  const history = createBrowserHistory({ basename: '/Remoteyourcar-1' })
   return (
  
 
 <Router history={history}>
-     
         <Switch>
           <Route path='/' exact component={Login} />
           <Route path='/home' exact component={Home} />
           <Route path='/register' exact component={Register} />
-          <Route path='/lock' exact component={Lock} />
-
-
-
-
-
-
+          <Route path='/lock' exact component={VehicleState} />
         </Switch>
       </Router>
-    
   );
 }
 
