@@ -119,9 +119,14 @@ class VehicleState extends Component {
     }
 
     lockVehicle() {
+        let token = localStorage.getItem('Token');
+        const myHeaders = new Headers();
+        const AuthStr = 'Bearer '.concat(token);
+        myHeaders.append('Authorization', AuthStr);
         let url = `https://h-178-174-162-51.a536.priv.bahnhof.se/api/1/vehicles/${this.id}/command/door_lock`
         fetch(url, {
-            method: 'POST'
+            method: 'POST',
+            headers: myHeaders
         })
             .then(r => r.json())
             .then(res => {
@@ -133,9 +138,14 @@ class VehicleState extends Component {
     }
 
     unLockVehicle() {
+        let token = localStorage.getItem('Token');
+        const myHeaders = new Headers();
+        const AuthStr = 'Bearer '.concat(token);
+        myHeaders.append('Authorization', AuthStr);
         let url = `https://h-178-174-162-51.a536.priv.bahnhof.se/api/1/vehicles/${this.id}/command/door_unlock`
         fetch(url, {
-            method: 'POST'
+            method: 'POST',
+            headers: myHeaders
         })
             .then(r => r.json())
             .then(res => {
