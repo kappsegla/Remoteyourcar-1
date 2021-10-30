@@ -18,7 +18,6 @@ function Home() {
     };
 
     useEffect(() => {
-        console.log('useEffect');
         if (token != null && isTokenExpired(token)) {
             localStorage.removeItem('Token');
             history.push("/");
@@ -32,12 +31,14 @@ function Home() {
         <div>
             <button type="submit" className="logout" onClick={clear}>Logga ut</button>
             {
-                carIds.map((item) => <div className="linkPadding" key={item}>
-                    <Link to={{pathname: '/lock', carId: item}}>
-                        <div>
-                            <img src={carlogo} alt={'Your car'}/>
-                        </div>
-                        {"Car: " + item}
+                carIds.map((item) => <div className="linkPadding row" key={item}>
+                    <Link className="column" to={{pathname: '/lock', carId: item}}>
+                        <img src={carlogo} alt={'Your car'}/>
+                        <div className="imagetext">{"Car: " + item}</div>
+                    </Link>
+                    <Link className="column" to={{pathname: '/climate', carId: item}}>
+                        <img src={carlogo} alt={'Your car'}/>
+                        <div className="imagetext">{"Climate Car: " + item}</div>
                     </Link>
                 </div>)
             }
