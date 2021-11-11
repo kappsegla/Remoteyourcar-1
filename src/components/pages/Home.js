@@ -17,7 +17,6 @@ function Home() {
         history.push("/");
     };
 
-
     useEffect(() => {
         const vehiclesList = () => {
             const myHeaders = new Headers();
@@ -50,8 +49,6 @@ function Home() {
         vehiclesList();
     }, [token, history]);
 
-
-
     return (
         <div>
             <h1>My Garage</h1>
@@ -59,10 +56,11 @@ function Home() {
             {
                 cars.map((item) => <div className="linkPadding row" key={item.carId} id={"carId" + item.carId}>
                     <Link className="column" to={{pathname: `/car`, state: {carId: item.carId}}}>
-                        <ColoredCar color={item.color}/>
-                        <div className="imagetext">{item.vin}<br/>{item.name}<br/>{item.color}</div>
+                        <div className="garageimagetext">
+                            <ColoredCar color={item.color}/>
+                        </div>
+                        <div className="garageimagetext">{"Vin:"+item.vin}<br/>{item.name}<br/>{item.color}</div>
                     </Link>
-                    <span></span>
                 </div>)
             }
         </div>

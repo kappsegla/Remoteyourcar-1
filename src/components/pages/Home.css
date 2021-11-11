@@ -1,9 +1,15 @@
 .linkPadding {
     padding:20px;
 }
-.imagetext{
-    width:100px;
-    text-align: center;
+.garageimagetext{
+    height: 100px;
+    padding-right: 10px;
+    text-align: left;
+    float: left;
+    font-size: small;
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
 }
 .column {
     flex: 50%;
