@@ -76,8 +76,9 @@ class ClimateState extends Component {
         };
         return (
             <div>
-                <h2>Climate State for carId: {String(this.state.carId)}</h2>
-                <NavigateUp/>
+                <h2>Climate Control</h2>
+                <div hidden={true}>{this.id}</div>
+                <NavigateUp carId={this.id}/>
                 <div className="container">
                     <div className="carImage"><img className="car" src={carinside} alt=""/></div>
                     <Slider className="vertical-slider-left"

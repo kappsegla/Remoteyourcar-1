@@ -1,0 +1,14 @@
+.linkPadding {
+    padding:20px;
+}
+.imagetext{
+    width:100px;
+    text-align: center;
+}
+.column {
+    flex: 50%;
+}
+
+.row {
+    display: flex;
+}

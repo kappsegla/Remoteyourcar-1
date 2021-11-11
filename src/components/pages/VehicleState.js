@@ -15,8 +15,6 @@ class VehicleState extends Component {
         this.handleLockClick = this.lockVehicle.bind(this);
         this.handleUnLockClick = this.unLockVehicle.bind(this);
         this.id = props.location.carId;
-        if ( this.id == null )
-            this.id = 2;
 
         this.state = {
             carId: 2,
@@ -42,8 +40,9 @@ class VehicleState extends Component {
     render() {
         return (
             <div>
-                <h2>Vehicle State for carId: {String(this.state.carId)}</h2>
-                <NavigateUp/>
+                <h1>Vehicle State</h1>
+                <div hidden={true}>{this.id}</div>
+                <NavigateUp carId={this.state.carId}/>
                 <div className="container">
                     <div className="carImage"><img className="car" src={car} alt=""/></div>
                     <div className="driverDoor">{this.state.doorState.df_locked
@@ -114,8 +113,6 @@ class VehicleState extends Component {
             .catch(function (err) {
                 console.log(err);
             });
-
-
     }
 
     lockVehicle() {

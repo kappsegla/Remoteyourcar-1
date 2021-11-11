@@ -2,7 +2,6 @@ import React from 'react'
 import logo from '../../images/logo.png';
 import '../../App.css';
 import {useState} from "react";
-import axios from "axios";
 import {Link} from "react-router-dom";
 import {useHistory} from "react-router-dom";
 import {isTokenExpired} from "../utils/utils";
@@ -25,23 +24,41 @@ const Login = () => {
         }
     }
 
+
     const logIn = async e => {
         e.preventDefault();
-        let token = await axios.post(
-            "https://h-178-174-162-51.a536.priv.bahnhof.se/auth/", {
 
-                username,
-                password
+        let bodyData = {username, password};
+        let data = {};
 
-            }
-        );
-        /** @namespace data.access_token **/
-        let data = token.data;
-        console.log(data.access_token);
-        localStorage.setItem('Token', data.access_token);
-        history.push("/home");
+        fetch(`https://h-178-174-162-51.a536.priv.bahnhof.se/auth/`,
+            {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(bodyData)
+            })
+            .then((response) => {
+                if (response.status !== 200) {
+                    throw new Error(response.status)
+                }
+                return response;
+            })
+            .then(res => res.json())
+            .then((result) => {
+                data = result;
+                /** @namespace data.access_token **/
+                console.log(data.access_token);
+                localStorage.setItem('Token', data.access_token);
+                history.push("/home");
+            })
+            .catch(function (err) {
+                const invalidElement = document.getElementById("invalid_credentials");
+                invalidElement.hidden = false;
+                console.log(err);
+            });
     };
-
 
     return (
         <div>
@@ -53,9 +70,9 @@ const Login = () => {
                     <img src={logo} className="App-logo" alt="logo"/>
                 </header>
                 <div className="login-con">
+                    <div id={"invalid_credentials"} hidden={true}>Invalid credentials</div>
                     <form onSubmit={logIn}>
                         <div className="username-div">
-
                             <label>
                                 <input type="text" placeholder="Username:" value={username} id="username"
                                        onChange={({target}) => setUsername(target.value)} required/>
@@ -69,12 +86,10 @@ const Login = () => {
                         </div>
                         <div>
                             <button type="submit" className="login-button">Login</button>
-
                         </div>
                     </form>
                 </div>
-                <p>Forgot your Password?</p>
-                <p><Link to="/register" className="alink"> New RegisterUser? Register Here </Link></p>
+                <p><Link to="/register" className="alink"> Register Here </Link></p>
 
             </div>
         </div>
