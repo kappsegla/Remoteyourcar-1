@@ -8,13 +8,12 @@ import './ClimateState.css'
 
 class ClimateState extends Component {
     id = 2;
-    working = false;
+    carName = "";
 
     constructor(props) {
         super(props);
-        this.id = props.location.carId;
-        if (this.id == null)
-            this.id = 2;
+        this.id =  localStorage.getItem('carId');
+        this.carName = localStorage.getItem('carName');
 
         this.state = {
             carId: 2,
@@ -76,7 +75,7 @@ class ClimateState extends Component {
         };
         return (
             <div>
-                <h2>Climate Control</h2>
+                <h2>{"Climate for " + this.carName}</h2>
                 <div hidden={true}>{this.id}</div>
                 <NavigateUp carId={this.id}/>
                 <div className="container">

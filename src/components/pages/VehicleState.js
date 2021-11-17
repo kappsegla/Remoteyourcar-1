@@ -9,12 +9,14 @@ import './VehicleState.css'
 
 class VehicleState extends Component {
     id=2;
-
+    carName = "";
     constructor(props) {
         super(props);
         this.handleLockClick = this.lockVehicle.bind(this);
         this.handleUnLockClick = this.unLockVehicle.bind(this);
-        this.id = props.location.carId;
+        //this.id = props.location.carId;
+        this.id =  localStorage.getItem('carId');
+        this.carName = localStorage.getItem('carName');
 
         this.state = {
             carId: 2,
@@ -40,7 +42,7 @@ class VehicleState extends Component {
     render() {
         return (
             <div>
-                <h1>Vehicle State</h1>
+                <h2>{"Lock/Unlock " + this.carName}</h2>
                 <div hidden={true}>{this.id}</div>
                 <NavigateUp carId={this.state.carId}/>
                 <div className="container">

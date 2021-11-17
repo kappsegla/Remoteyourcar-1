@@ -17,6 +17,12 @@ function Home() {
         history.push("/");
     };
 
+    const navigate = (id, name) => {
+        localStorage.setItem('carId', id);
+        localStorage.setItem('carName', name)
+        history.push("/car");
+    };
+
     useEffect(() => {
         const vehiclesList = () => {
             const myHeaders = new Headers();
@@ -55,12 +61,14 @@ function Home() {
             <button type="submit" className="logout" onClick={clear}>Logga ut</button>
             {
                 cars.map((item) => <div className="linkPadding row" key={item.carId} id={"carId" + item.carId}>
-                    <Link className="column" to={{pathname: `/car`, state: {carId: item.carId}}}>
+                    {/*<Link className="column" to={{pathname: `/car`, state: {carId: item.carId}}}>*/}
+                    <div className={"column"} onClick={() => navigate(item.carId, item.name)}>
                         <div className="garageimagetext">
                             <ColoredCar color={item.color}/>
                         </div>
-                        <div className="garageimagetext">{"Vin:"+item.vin}<br/>{item.name}<br/>{item.color}</div>
-                    </Link>
+                        <div className="garageimagetext">{"Vin:" + item.vin}<br/>{item.name}<br/>{item.color}</div>
+                    </div>
+                    {/*</Link>*/}
                 </div>)
             }
         </div>

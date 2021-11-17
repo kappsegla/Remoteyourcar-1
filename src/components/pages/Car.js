@@ -13,7 +13,8 @@ function Car(props) {
     let history = useHistory();
     let token = localStorage.getItem('Token');
     const location = useLocation();
-    const {carId} = location.state;
+    const carId = localStorage.getItem('carId');
+    const carName = localStorage.getItem('carName');
 
     useEffect(() => {
         console.log(carId);
@@ -25,7 +26,7 @@ function Car(props) {
 
     return (
         <div>
-            <h1>Your Car</h1>
+            <h2>{"Your Car " + carName}</h2>
             <div hidden={true}>{carId}</div>
             <NavigateUp/>
             <div className="linkPadding row" key={carId} id={"carId" + carId}>
