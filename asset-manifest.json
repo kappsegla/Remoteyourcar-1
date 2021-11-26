@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Remoteyourcar-1/static/css/main.b4e85418.chunk.css",
-    "main.js": "/Remoteyourcar-1/static/js/main.c4f3e8c8.chunk.js",
-    "main.js.map": "/Remoteyourcar-1/static/js/main.c4f3e8c8.chunk.js.map",
+    "main.js": "/Remoteyourcar-1/static/js/main.ad152c57.chunk.js",
+    "main.js.map": "/Remoteyourcar-1/static/js/main.ad152c57.chunk.js.map",
     "runtime-main.js": "/Remoteyourcar-1/static/js/runtime-main.1bdd7d31.js",
     "runtime-main.js.map": "/Remoteyourcar-1/static/js/runtime-main.1bdd7d31.js.map",
     "static/css/2.4a35ef0a.chunk.css": "/Remoteyourcar-1/static/css/2.4a35ef0a.chunk.css",
@@ -24,6 +24,6 @@
     "static/css/2.4a35ef0a.chunk.css",
     "static/js/2.fd6edeae.chunk.js",
     "static/css/main.b4e85418.chunk.css",
-    "static/js/main.c4f3e8c8.chunk.js"
+    "static/js/main.ad152c57.chunk.js"
   ]
 }
