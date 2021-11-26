@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/Remoteyourcar-1/static/css/main.6414c067.chunk.css",
-    "main.js": "/Remoteyourcar-1/static/js/main.7078e1cd.chunk.js",
-    "main.js.map": "/Remoteyourcar-1/static/js/main.7078e1cd.chunk.js.map",
+    "main.css": "/Remoteyourcar-1/static/css/main.b4e85418.chunk.css",
+    "main.js": "/Remoteyourcar-1/static/js/main.c4f3e8c8.chunk.js",
+    "main.js.map": "/Remoteyourcar-1/static/js/main.c4f3e8c8.chunk.js.map",
     "runtime-main.js": "/Remoteyourcar-1/static/js/runtime-main.1bdd7d31.js",
     "runtime-main.js.map": "/Remoteyourcar-1/static/js/runtime-main.1bdd7d31.js.map",
     "static/css/2.4a35ef0a.chunk.css": "/Remoteyourcar-1/static/css/2.4a35ef0a.chunk.css",
@@ -10,11 +10,11 @@
     "static/js/2.fd6edeae.chunk.js.map": "/Remoteyourcar-1/static/js/2.fd6edeae.chunk.js.map",
     "index.html": "/Remoteyourcar-1/index.html",
     "static/css/2.4a35ef0a.chunk.css.map": "/Remoteyourcar-1/static/css/2.4a35ef0a.chunk.css.map",
-    "static/css/main.6414c067.chunk.css.map": "/Remoteyourcar-1/static/css/main.6414c067.chunk.css.map",
+    "static/css/main.b4e85418.chunk.css.map": "/Remoteyourcar-1/static/css/main.b4e85418.chunk.css.map",
     "static/js/2.fd6edeae.chunk.js.LICENSE.txt": "/Remoteyourcar-1/static/js/2.fd6edeae.chunk.js.LICENSE.txt",
     "static/media/backarrow.9939878d.svg": "/Remoteyourcar-1/static/media/backarrow.9939878d.svg",
-    "static/media/car.d107f261.png": "/Remoteyourcar-1/static/media/car.d107f261.png",
-    "static/media/carinside.1fc6c75d.png": "/Remoteyourcar-1/static/media/carinside.1fc6c75d.png",
+    "static/media/car.1a155a1b.webp": "/Remoteyourcar-1/static/media/car.1a155a1b.webp",
+    "static/media/carinside.fe1eb706.webp": "/Remoteyourcar-1/static/media/carinside.fe1eb706.webp",
     "static/media/greenlock.1e16003c.svg": "/Remoteyourcar-1/static/media/greenlock.1e16003c.svg",
     "static/media/logo.b2cb48e0.png": "/Remoteyourcar-1/static/media/logo.b2cb48e0.png",
     "static/media/redlock.92695db5.svg": "/Remoteyourcar-1/static/media/redlock.92695db5.svg"
@@ -23,7 +23,7 @@
     "static/js/runtime-main.1bdd7d31.js",
     "static/css/2.4a35ef0a.chunk.css",
     "static/js/2.fd6edeae.chunk.js",
-    "static/css/main.6414c067.chunk.css",
-    "static/js/main.7078e1cd.chunk.js"
+    "static/css/main.b4e85418.chunk.css",
+    "static/js/main.c4f3e8c8.chunk.js"
   ]
 }
